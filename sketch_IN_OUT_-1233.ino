@@ -33,11 +33,5 @@ void loop() {
   Wert_2 = shiftIn(DATA, CLK, MSBFIRST);
   delay(1);
 
-  Serial.print(Wert_1, BIN);
-  Serial.print("  ");
-  Serial.println(Wert_2, BIN);
-  shiftOut(DOUT, CLK, MSBFIRST, Wert_1 + Wert_2);
-  
-
-  delay(10);
+ 
 }
